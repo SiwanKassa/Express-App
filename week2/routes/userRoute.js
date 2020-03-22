@@ -1,9 +1,9 @@
 'use strict';
-// userRoute
 const express = require('express');
-const router = express.Router();
 const userController = require('../controllers/userController');
+const router = express.Router();
 const bodyParser = require('body-parser');
+//const passport = require('passport');
 //const multer = require('multer');
 
 
@@ -16,8 +16,17 @@ router.get('/:id', userController.user_get);
   res.send(id)
 });*/
 
+
 router.use(bodyParser.json());
 router.use(bodyParser.urlencoded({ extended: true }));
+
+router.get('/', function(req, res, next) {
+  res.send('respond with a resource');
+});
+
+router.get('/profile', function(req, res, next) {
+  res.send(req.user);
+});
 
 router.post('/', (req, res) => {
   res.send('With this endpoint you can add users.');

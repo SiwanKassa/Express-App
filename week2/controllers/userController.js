@@ -1,5 +1,4 @@
 'use strict';
-
 const userModel = require('../models/userModel');
 
 const users = userModel.users;

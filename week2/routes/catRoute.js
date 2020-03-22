@@ -4,7 +4,8 @@ const router = express.Router();
 const catController = require('../controllers/catController');
 const multer  = require('multer');
 const upload = multer({ dest: './uploads/' });
-const app = express;
+const passport = require('passport');
+//const app = express;
 
 router.post('/', upload.single('avatar'), (req, res, next) =>{
 });
@@ -24,6 +25,8 @@ router.get('/:id', catController.cat_get);
     router.get('/:id', catController.cat_get);
   }
 });*/
+
+//passport.authenticate('jwt', {session: false});
 
 router.post('/', (req, res) => {
   res.send('With this endpoint you can add cats.');
