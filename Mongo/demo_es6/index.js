@@ -14,7 +14,7 @@ app.get('/', async (req, res) => {
 });
 
 app.post('/cat', async(req, res) => {
-  const mycat = await cat.create({ name: 'mittens', age: 5, owner: '' });
+  const mycat = await cat.create({ name: 'kitten', age: 10, owner: '5e7a7e0b92794753802f8fe4' });
   /*
   const myuser = find
   myuser.cats.push(mycat._id);

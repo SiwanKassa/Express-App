@@ -1,27 +1,23 @@
 {
-  "name": "demo_es6_node",
+  "name": "demo_es6",
   "version": "1.0.0",
-  "description": "demo es6 features, test npm, node, express, etc.",
+  "description": "sssf mongo",
   "main": "index.js",
+  "dependencies": {
+    "mongoose": "^5.9.6"
+  },
+  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git@gitlab.metropolia.fi:patricka/demo_es6_node.git"
+    "url": "git+https://github.com/SiwanKassa/Express-App.git"
   },
-  "keywords": [
-    "es6",
-    "npm",
-    "node",
-    "express"
-  ],
-  "author": "Patrick Ausderau",
-  "license": "GPL-3.0",
-  "dependencies": {
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "mongoose": "^5.9.6"
-  }
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SiwanKassa/Express-App/issues"
+  },
+  "homepage": "https://github.com/SiwanKassa/Express-App#readme"
 }
