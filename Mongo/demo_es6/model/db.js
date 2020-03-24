@@ -1,4 +1,4 @@
-//'use strict'; module is strict by default
+//'use strict';
 const mongoose = require('mongoose');
 
 (async () => {
